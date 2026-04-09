@@ -1,0 +1,52 @@
+/* full body content align */
+body {
+    background: #f4f4f4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+/* headding content style */
+h1{
+text-align: center;
+font-weight: bold;
+font-size: 50px;
+color: darkblue;
+}
+/* group in one Div section */
+#calculator {
+background: black;
+padding: 20px;
+border-radius: 10px;
+width: 300px;
+}
+/* calculater id content to initiated in use javascript */
+#display {
+width: 100%;
+height: 50px;
+font-size: 22px;
+text-align: right;
+margin-bottom: 10px;
+border: none;
+padding: 5px;
+}
+/* align the responsive button CTA */
+.buttons {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10px;
+}
+/* call to action the value */
+button {
+height: 50px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* hover the Action CTA Button */
+button:hover {
+background: orange;
+color: white;
+}

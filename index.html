@@ -4,54 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <!-- Internal Css -->
-    <style> 
-    body {
-            background: #f4f4f4;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial;
-        }
-        h1{
-            text-align: center;
-            font-weight: bold;
-            font-size: 50px;
-            color: darkblue;
-        }
-        #calculator {
-            background: black;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-        }
-        #display {
-            width: 100%;
-            height: 50px;
-            font-size: 22px;
-            text-align: right;
-            margin-bottom: 10px;
-            border: none;
-            padding: 5px;
-        }
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-        }
-        button {
-            height: 50px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: orange;
-            color: white;
-        }
-    </style>
+    <!-- External Css added-->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -96,54 +50,8 @@
             <button onclick="resultCalculate()">=</button>
 
         </div>
-    </section>
-    <!-- JS- javascript added in HTML structure -->
-     <!-- internal java script -->
-     <script>
-        let display = document.getElementById("display");
-        // multiple function to write - pressValue function
-        function pressValue(value){
-            display.value += value;
-        }
-        // clear-display function
-        function clearDisplay(){
-            display.value = "";
-        }
-        // deleteLast function
-        function deleteLast() {
-            display.value = display.value.slice(0, -1);
-        }
-        // calculate function to show the result
-        function resultCalculate() {
-            try {
-                display.value = eval(display.value);
-            } catch {
-                display.value = "Error";
-            }
-        }
-        // squareRoot function
-        function squareRoot(){
-            display.value=Math.sqrt(display.value);
-        }
-
-        // cubeRoot function
-        function cubeRoot(){
-            display.value=Math.cbrt(display.value);
-        }
-        // power value function
-        function powerValue(){
-            display.value +="**";
-        }
-        // change sign value function
-        function changeSign(){
-            display.value=display.value *-1;
-        }
-        // squareValue function
-        function squareValue(){
-            display.value= Math.pow(display.value,2);
-        }
-
-     </script>
-    
+    </section
+    <!-- External css added -->
+    <script src="script.js"></script>
 </body>
 </html>
